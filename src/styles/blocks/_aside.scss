@@ -1,0 +1,37 @@
+.aside{
+   display: flex;
+   flex-direction: column;
+   padding: 25px 24px;
+   background: $black;
+   width: 35%;
+   min-height: 423px;
+   &__top{
+      display: flex;
+      flex-direction: column;
+      background: $black;
+      flex: 1;
+      &-title{
+         @include text ($montserrat, normal, normal, 26px, 16px, white, $black);
+      }
+      &-list{
+         background: $black;
+         display: flex;
+         flex-direction: column;
+         margin-top: 40px;
+         row-gap: 10px;
+      }
+      &-item{
+         @include text ($montserrat, normal, normal, 16px, 16px, $grey, $black);
+      }
+   }
+   &__bottom{
+      display: flex;
+      justify-content: space-between;
+      background: $black;
+      &-btn{
+         @include text ($montserrat, normal, normal, 16px, 16px, $grey,$black);
+         border: none;
+         cursor: pointer;
+      }
+   }
+}

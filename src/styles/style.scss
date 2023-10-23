@@ -1,0 +1,67 @@
+@import "blocks/fonts";
+
+//цвета
+// $black: rgb(24, 25, 25);
+$black: #191919;
+$blackLight: rgb(40, 40, 40);
+$greyLight: rgb(228, 228, 228);
+$grey: rgb(173, 169, 169);
+$blueviolet: rgb(131, 38, 219);
+
+//шрифты
+$montserrat: 'MontserratRegular', sans-serif;
+@mixin text($ff, $fs, $fw, $fz, $lh, $cr,$bg){
+    font-family: $ff;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $cr;
+    background: $bg;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background: $blackLight;
+}
+.container{
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background: $blackLight;
+}
+.begin{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.btn-blue{
+    @include text ($montserrat, normal, normal, 18px, 16px, white, $blueviolet);
+    padding: 10px 20px;
+    border: 1px solid $blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-grey{
+    @include text ($montserrat, normal, normal, 18px, 16px, white, $grey);
+    padding: 10px 20px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@import "blocks/header";
+@import "blocks/aside";
+@import "blocks/sale";
+@import "blocks/trending";
+@import "blocks/worth";
+@import "blocks/new";
+@import "blocks/footer";

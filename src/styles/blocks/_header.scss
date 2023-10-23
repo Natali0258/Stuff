@@ -1,0 +1,74 @@
+.header{
+   &__nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+   }
+   &__logo{
+      display: flex;
+      align-items: center;
+      position: relative;
+      &-icon{
+         color: $blueviolet;
+         width: 60px;
+         height: 60px;
+         background: $blackLight;
+         background-size: cover;
+         z-index: 0;
+         position: absolute;
+         top: -20px;
+         left: 0;
+      }
+      &-text{
+         @include text ($montserrat, normal, normal, 40px, 16px, white,$blackLight);
+         z-index: 1;
+         margin-left: 45px;
+      }
+   }
+   &__profil{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 10px;
+      &-avatar{
+         background: $blueviolet;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         border: 2px solid $blueviolet;
+         top: 2px;
+      }
+      &-name{
+         @include text ($montserrat, normal, normal, 20px, 16px, white,$blackLight);
+      }
+   }
+   &__search{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 10px;
+      &-icon{
+         width: 20px;
+      }
+      &-input{
+         color: white;
+         border: 1px solid white;
+      }
+   }
+   &__group{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 40px;
+      &-favourite{
+         width: 22px;
+         height: 22px;
+         cursor: pointer;
+      }
+      &-bag{
+         width:25px;
+         cursor: pointer;
+      }
+   }
+}

@@ -1,0 +1,30 @@
+.sale{
+   width: 65%;
+   position: relative;
+   background: $black;
+   &__computer{
+      width: 100%;
+      background-size: contain;
+      z-index: 1;
+   }
+   &__subtitle{
+      position: absolute;
+      top: 35%;
+      left: 30px;
+      z-index: 2;
+      @include text($montserrat, normal, normal, 14px, 14px, $grey, $black);
+   }
+   &__title{
+      position: absolute;
+      top: 42%;
+      left: 30px;
+      z-index: 2;
+      @include text($montserrat, normal, normal, 30px, 35px, white,$black);
+   }
+   &__btn{
+      position: absolute;
+      top: 62%;
+      left: 30px;
+      z-index: 2;
+   }
+}

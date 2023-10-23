@@ -1,0 +1,53 @@
+.footer{
+   &__nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 20px;
+      padding: 20px;
+      position: relative;
+      background: $black;
+   }
+   &__logo{
+      display: flex;
+      align-items: center;
+      background: $black;
+      &-icon{
+         color: $blueviolet;
+         width: 30px;
+         height: 30px;
+         background: $black;
+         background-size: cover;
+         z-index: 0;
+         position: absolute;
+         top: 20px;
+         left: 10px;
+      }
+      &-text{
+         @include text ($montserrat, normal, normal, 20px, 16px, white, $black);
+         z-index: 1;
+         margin-left: 13px;
+      }
+   }
+   &__develop{
+      @include text ($montserrat, normal, normal, 16px, 16px, white,$black);
+      &-name{
+         background: $black;
+      }
+   }
+   &__social{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 20px;
+      background: $black;
+      &-link{
+         background: $black;
+      }
+      &-item{
+         width: 25px;
+         background: $black;
+         cursor: pointer;
+      }
+   }
+}
