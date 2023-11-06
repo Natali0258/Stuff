@@ -1,2 +1,2 @@
-#Stuff 
-##Технологии: SCSS, JS
+# Stuff 
+## Технологии: SCSS, JS

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/styles/style.css">
+    <title>Staff products</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    <img class="header__logo-icon" src="../../src/images/dollar-52.png" alt="logo">
+                    <h1 class="header__logo-text">TUFF</h1>
+                </div>
+                <div class="header__profil">
+                    <img class="header__profil-avatar" src="../../src/images/avatar.svg" alt="profile">
+                    <p class="header__profil-name">Yana Tankovich</p>
+                </div>
+                <div class="header__search">
+                    <img class="header__search-icon" src="../../src/images/search-white.svg" alt="search">
+                    <input class="header__search-input" type="text" />
+                </div>
+                <div class="header__group">
+                    <img class="header__group-favourite" src="../../src/images/favourite-white.png" alt="favourite">
+                    <img class="header__group-bag" src="../../src/images/bag-white.png" alt="bag">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="begin">
+                <aside class="aside">
+                    <div class="aside__top">
+                        <h2 class="aside__top-title">CATEGORIES</h2>
+                        <ul class="aside__top-list">
+                            <li class="aside__top-item">
+                               <a class="aside__top-link" href="../products/index.html?category=all">All products</a>
+                            </li>
+                            <li class="aside__top-item">
+                               <a class="aside__top-link" href="../products/index.html?category=men">Men's clothing</a>
+                            </li>
+                            <li class="aside__top-item">
+                               <a class="aside__top-link" href="../products/index.html?category=women">Women's clothing</a>
+                            </li>
+                            <li class="aside__top-item">
+                               <a class="aside__top-link" href="../products/index.html?category=shoes">Shoes</a>
+                            </li>
+                            <li class="aside__top-item">
+                               <a class="aside__top-link" href="../products/index.html?category=jewelery">Jewelery</a>
+                            </li>
+                            <li class="aside__top-item">
+                               <a class="aside__top-link" href="../products/index.html?category=electronics">Electronics</a>
+                            </li>
+                         </ul>
+                    </div>
+                    <div class="aside__bottom">
+                        <button class="aside__bottom-btn">Help</button>
+                        <button class="aside__bottom-btn">Terms & Conditions</button>
+                    </div>
+                </aside>
+                <section class="product">
+                    <div class="product__image">
+                        <img class="product__img" src="../../src/images/snikears_Bona.png" alt="snikears">
+                    </div>
+                    <!-- <div class="product__slider">
+                        <div class="product__slider-item">
+                            <img class="product__slider-img" src="../../src/images/snikears_Bona.png"  alt="snikears">
+                        </div>
+                        <div class="product__slider-item">
+                            <img class="product__slider-img" src="../../src/images/snikears_Bona.png"  alt="snikears">
+                        </div>
+                        <div class="product__slider-item">
+                            <img class="product__slider-img" src="../../src/images/snikears_Bona.png"  alt="snikears">
+                        </div>
+                        <div class="product__slider-item">
+                            <img class="product__slider-img" src="../../src/images/snikears_Bona.png"  alt="snikears">
+                        </div>
+                    </div> -->
+                    <div class="product__info">
+                        <h3 class="product__title">Snikears Bona</h3>
+                        <p class="product__price">599$</p>
+                        <p class="product__category">
+                            <span class="product__category-span">category:</span> 
+                            <span class="product__category-text">Men's clothing</span>
+                        </p>  
+                        <p class="product__rating">
+                            <span class="product__rating-span">rating:</span>
+                            <span class="product__rating-num"> 3.9</span>
+                        </p>  
+                        <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, officiis accusamus? Ad, itaque quaerat corrupti quas fuga esse dignissimos suscipit, ratione amet cumque commodi rerum! Eligendi dolor nisi corporis nostrum?</p>
+                        <div class="product__buttons">
+                            <button class="product__btn product__add-card btn-blue">Add to cart</button>
+                            <button class="product__btn product__add-favorites btn-grey">Add to favorites</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="trending">
+                <h3 class="trending__title">Related products</h3>
+                <div class="trending__cards">
+                </div>
+                <button class="trending__btn btn-blue less__btn">See more</button>
+            </section>
+
+        </div>
+
+         <footer>
+            <div class="container">
+                <nav class="footer__nav">
+                    <div class="footer__logo">
+                        <img class="footer__logo-icon" src="../../src/images/dollar-52.png" alt="logo">
+                        <h1 class="footer__logo-text">TUFF</h1>
+                    </div>
+                    <p class="footer__develop">
+                        Developer by <span class="footer__develop-name">Phantather</span>
+                    </p>
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="">
+                            <img class="footer__social-item" src="../../src/images/telegram.png" alt="favourite">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img class="footer__social-item" src="../../src/images/twitter.svg" alt="bag">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img class="footer__social-item" src="../../src/images/whatsapp.svg" alt="bag">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+
+   </main>
+
+   <script src="./js/product.js"></script>
+
+</body>
+
+</html>

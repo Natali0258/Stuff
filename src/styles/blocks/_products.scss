@@ -1,0 +1,92 @@
+.products{
+   margin-top:20px;
+   padding: 20px;
+   background: $black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__title{
+      @include text ($montserrat, normal, normal, 20px, 16px, $greyLight, $black);
+   }
+   &__top{
+      margin-top: 20px;
+      display: flex;
+      align-self: start;
+      column-gap: 30px;
+   }
+   &__search{
+      @include text ($montserrat, normal, normal, 20px, 16px, $black, $greyLight);
+      border: 1px solid transparent;
+      padding-left: 10px;
+   }
+   &__from{
+      @include text ($montserrat, normal, normal, 20px, 16px, $black, $greyLight);
+      border: 1px solid transparent;
+      padding-left: 10px;
+   }
+   &__select{
+      @include text ($montserrat, normal, normal, 20px, 16px, $black, $greyLight);
+      border: 1px solid transparent;
+   }
+   &__option{
+      @include text ($montserrat, normal, normal, 20px, 16px, $black, $greyLight);
+   }
+   &__cards{
+      margin-top: 20px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 15px;
+      row-gap: 20px;
+      width: 100%;
+      flex-wrap: wrap;
+      background: $black;
+   }
+   &__card{
+      width: calc(20% - 15px);
+      // height: 380px;
+      background: $blackLight;
+      &-image{
+         width: 100%;
+         height: 300px;
+         overflow: hidden;
+      }
+      &-img{
+         width: 100%;
+         height: auto;
+      }
+      &-title{
+         margin: 10px 0 0 10px;
+         height: 80px;
+         overflow: hidden;
+         @include text ($montserrat, normal, normal, 16px, 16px, $greyLight, $blackLight);
+      }
+      &-category{
+         margin: 10px 0 0 10px;
+         @include text ($montserrat, normal, normal, 14px, 14px, $grey, $blackLight);
+      }
+      &-block{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin: 20px 10px 10px;
+      }
+      &-price{
+         @include text ($montserrat, normal, normal, 16px, 16px, $blueviolet, $blackLight);
+      }
+      &-oldprice{
+         @include text ($montserrat, normal, normal, 14px, 16px, $grey, $blackLight);
+      }
+      &-purchased{
+         @include text ($montserrat, normal, normal, 8px, 16px, $grey, $blackLight);
+         margin-bottom: 20px;
+      }
+   }
+   &__pagination{
+      background: $black;
+      &-btn{
+         margin-top: 20px;
+         padding: 10px 15px;
+      }
+   }
+}

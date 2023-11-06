@@ -4,8 +4,8 @@
 // $black: rgb(24, 25, 25);
 $black: #191919;
 $blackLight: rgb(40, 40, 40);
-$greyLight: rgb(228, 228, 228);
-$grey: rgb(173, 169, 169);
+$greyLight: rgb(211, 208, 208);
+$grey: rgb(133, 128, 128);
 $blueviolet: rgb(131, 38, 219);
 
 //шрифты
@@ -45,14 +45,21 @@ $montserrat: 'MontserratRegular', sans-serif;
 .btn-blue{
     @include text ($montserrat, normal, normal, 18px, 16px, white, $blueviolet);
     padding: 10px 20px;
-    border: 1px solid $blueviolet;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .btn-grey{
     @include text ($montserrat, normal, normal, 18px, 16px, white, $grey);
     padding: 10px 20px;
-    border: 1px solid $grey;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-black{
+    @include text ($montserrat, normal, normal, 18px, 16px, white, $black);
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -64,4 +71,7 @@ $montserrat: 'MontserratRegular', sans-serif;
 @import "blocks/trending";
 @import "blocks/worth";
 @import "blocks/new";
+@import "blocks/products";
+@import "blocks/product";
+@import "blocks/basket";
 @import "blocks/footer";

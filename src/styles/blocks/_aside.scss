@@ -23,6 +23,13 @@
       &-item{
          @include text ($montserrat, normal, normal, 16px, 16px, $grey, $black);
       }
+      &-link{
+         cursor: pointer;
+         @include text ($montserrat, normal, normal, 16px, 16px, $grey, $black);
+      }
+      &-link:hover{
+         color: $blueviolet;
+      }
    }
    &__bottom{
       display: flex;

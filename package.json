@@ -1,0 +1,23 @@
+{
+  "name": "stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natali0258/Stuff.git"
+  },
+  "author": "Natalia Tribendis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natali0258/Stuff/issues"
+  },
+  "homepage": "https://github.com/Natali0258/Stuff#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

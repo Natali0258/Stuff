@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../src/styles/style.css">
+   <title>Staff products</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <nav class="header__nav">
+            <div class="header__logo">
+               <img class="header__logo-icon" src="../../src/images/dollar-52.png" alt="logo">
+               <h1 class="header__logo-text">TUFF</h1>
+            </div>
+            <div class="header__profil">
+               <img class="header__profil-avatar" src="../../src/images/avatar.svg" alt="profile">
+               <p class="header__profil-name">Yana Tankovich</p>
+            </div>
+            <div class="header__search">
+               <img class="header__search-icon" src="../../src/images/search-white.svg" alt="search">
+               <input class="header__search-input" type="text" />
+            </div>
+            <div class="header__group">
+               <img class="header__group-favourite" src="../../src/images/favourite-white.png" alt="favourite">
+               <img class="header__group-bag" src="../../src/images/bag-white.png" alt="bag">
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <div class="container">
+
+         <div class="begin">
+            <aside class="aside">
+               <div class="aside__top">
+                  <h2 class="aside__top-title">CATEGORIES</h2>
+                  <ul class="aside__top-list">
+                     <li class="aside__top-item">
+                        <a class="aside__top-link" href="?category=all">All products</a>
+                     </li>
+                     <li class="aside__top-item">
+                        <a class="aside__top-link" href="?category=men">Men's clothing</a>
+                     </li>
+                     <li class="aside__top-item">
+                        <a class="aside__top-link" href="?category=women">Women's clothing</a>
+                     </li>
+                     <li class="aside__top-item">
+                        <a class="aside__top-link" href="?category=shoes">Shoes</a>
+                     </li>
+                     <li class="aside__top-item">
+                        <a class="aside__top-link" href="?category=jewelery">Jewelery</a>
+                     </li>
+                     <li class="aside__top-item">
+                        <a class="aside__top-link" href="?category=electronics">Electronics</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="aside__bottom">
+                  <button class="aside__bottom-btn">Help</button>
+                  <button class="aside__bottom-btn">Terms & Conditions</button>
+               </div>
+            </aside>
+            <section class="sale">
+               <img class="sale__computer" src="../../src/images/computer.png" alt="computer">
+               <p class="sale__subtitle">THE BESTSELLED OF 2022</p>
+               <h2 class="sale__title">LENNON R2D2 <br /> WITH NVIDIA 5090 TI</h2>
+               <button class="sale__btn btn-blue">Shop Now</button>
+            </section>
+         </div>
+
+         <section class="products">
+            <h3 class="products__title">All products</h3>
+            <div class="products__top">
+               <input type="text" class="products__search" placeholder="Product name">
+               <input type="number" class="products__from" value="0">
+
+               <select class="products__select">
+                  <option class="products__option" value="">По умолчанию</option>
+                  <option min="0" class="products__option" value="desc">От большего</option>
+                  <option class="products__option" value="asc">От меньшего</option>
+               </select>
+            </div>
+            <div class="products__cards">
+            </div>
+            <div class="products__pagination">
+            </div>
+         </section>
+
+      </div>
+
+      <footer>
+         <div class="container">
+            <nav class="footer__nav">
+               <div class="footer__logo">
+                  <img class="footer__logo-icon" src="../../src/images/dollar-52.png" alt="logo">
+                  <h1 class="footer__logo-text">TUFF</h1>
+               </div>
+               <p class="footer__develop">
+                  Developer by <span class="footer__develop-name">Phantather</span>
+               </p>
+               <div class="footer__social">
+                  <a class="footer__social-link" href="">
+                     <img class="footer__social-item" src="../../src/images/telegram.png" alt="favourite">
+                  </a>
+                  <a class="footer__social-link" href="">
+                     <img class="footer__social-item" src="../../src/images/twitter.svg" alt="bag">
+                  </a>
+                  <a class="footer__social-link" href="">
+                     <img class="footer__social-item" src="../../src/images/whatsapp.svg" alt="bag">
+                  </a>
+               </div>
+            </nav>
+         </div>
+      </footer>
+
+   </main>
+
+   <script src="./js/products.js"></script>
+
+</body>
+
+</html>

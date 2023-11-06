@@ -1,0 +1,70 @@
+.basket{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    background: $black;
+    &__title{
+        @include text ($montserrat, normal, normal, 26px, 16px, white, $black);
+        letter-spacing: 2px;
+        background: $black;
+    }
+    &__products{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background: $black;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+        padding-left: 10px;
+        background: $blackLight;
+        &-img{
+            width: calc(15% - 5px);
+            background: $blackLight;
+            border-radius: 5px;
+
+        }
+        &-info{
+            width: calc(30% - 5px);
+            background: $blackLight;
+            align-items: center;
+        }
+        &-title{
+            @include text ($montserrat, normal, normal, 18px, 16px, $greyLight, $blackLight);
+        }
+        &-category{
+        @include text ($montserrat, normal, normal, 14px, 16px, $grey, $blackLight);
+        }
+        &-price{
+            width: calc(15% - 5px);
+            text-align: center;
+            @include text ($montserrat, normal, normal, 20px, 16px, white, $blackLight);
+        }
+        &-buttons{
+            width: calc(20% - 5px);
+            display: flex;
+            column-gap: 5px;
+            background: $blackLight;
+        }
+        &-btn{
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+        &-sum{
+            width: calc(15% - 5px);
+            text-align: center;
+            @include text ($montserrat, normal, normal, 20px, 16px, $blueviolet, $blackLight);
+        }
+        &-del{
+            width: calc(5% - 5px);
+            @include text ($montserrat, normal, normal, 20px, 16px, $greyLight, $blackLight);
+            border: none;
+            cursor: pointer;
+        }
+    }    
+}
